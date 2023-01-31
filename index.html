@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Mary Jane</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Poppins:wght@500&family=Rubik&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="#">
+          <img src="assets/polos.png" alt="logo" class="logo-img" />
+        </a>
+        <!-- <h1 class="logo-title">LOGO</h1> -->
+      </div>
+      <nav>
+        <ul>
+          <li><a href="#order">Order</a></li>
+          <li><a href="mailto:gavrilariendra00@gmail.com">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="btn-cta" onclick="redirInstagram()">Follow me</button>
+    </header>
+    <div class="container">
+      <div class="intro">
+        <p class="title">Maryjane</p>
+        <p class="description">Just a kid who likes fantasy.</p>
+        <img src="assets/polos.png" alt="mj photo" class="img-photo" />
+      </div>
+    </div>
+    <div class="parallax">
+      <div class="outro">
+        <p class="title">Welcome</p>
+        <p class="description">Let me do my favor.</p>
+        <div class="mt-10">
+          <button class="btn-cta" onclick="alert('send me message on gavrilariendra00@gmail.com')">Let's collab!</button>
+        </div>
+      </div>
+      <div class="container" id="order">
+        <div class="wrapper">
+          <div class="card">
+            <div class="card-item">
+              <img src="assets/hot.png" alt="icon 1" class="icon" />
+              <p class="card-title">Great service</p>
+              <p class="card-description">Price is very cheap!</p>
+            </div>
+            <div class="card-item">
+              <img src="assets/contact.png" alt="icon 2" class="icon" />
+              <p class="card-title">Review</p>
+              <p class="card-description">
+                they are very happy to work with me
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <p class="f-title">&copy; MJ</p>
+    </footer>
+  </body>
+  <script>
+    function redirInstagram() {
+      window.location.href = "https://instagram.com/aprillxp"
+    }
+
+    function redirGmail() {
+      window.location.href = "https://gmail.com"
+    }
+  </script>
+</html>
